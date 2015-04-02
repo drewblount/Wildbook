@@ -79,7 +79,7 @@
 %>
 
 <div id="header"><img name="masthead"
-                      src="<%=CommonConfiguration.getURLToMastheadGraphic(context)%>" width="810"
+                      src="<%=CommonConfiguration.getURLToMastheadGraphic(request, context)%>" width="810"
                       height="150" border="0" usemap="#m_masthead" alt=""/></div>
 <div id="header_menu">
   <ul id="pmenu">
@@ -403,7 +403,7 @@
 </div>
 
 <!-- define our JavaScript -->
-	<script type="text/javascript" src="javascript/jquery-2.1.3.js"></script>
+	<script type="text/javascript" src="<%=requestURL %>/javascript/jquery-2.1.3.js"></script>
 	<script type="text/javascript" src="<%=requestURL %>/javascript/jquery.blockUI.js"></script>
 	<script type="text/javascript" src="<%=requestURL %>/javascript/jquery.cookie.js"></script>
 	<script type="text/javascript">

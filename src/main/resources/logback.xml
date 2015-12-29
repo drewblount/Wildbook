@@ -9,7 +9,7 @@
   <property name="htmlPattern" value="%date%thread%mdc%level%logger%msg"/>
 
   <appender name="GENERICLOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
-  	<file>../webapps/wildbook/logs/activity.log</file>
+  	<file>/var/lib/tomcat7/webapps/wildbook/logs/activity.log</file>
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
       <fileNamePattern>../webapps/wildbook/logs/%d{yyyy-MM-}activity.log.gz</fileNamePattern>
       <maxHistory>6</maxHistory>
@@ -20,7 +20,7 @@
   </appender>
 
   <appender name="SUBMISSIONFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <file>../webapps/wildbook/logs/encounter-submission.htm</file>
+    <file>/var/lib/tomcat7/webapps/wildbook/logs/encounter-submission.htm</file>
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
       <fileNamePattern>../webapps/wildbook/logs/%d{yyyy-MM-}encounter-submission.htm</fileNamePattern>
     </rollingPolicy>
@@ -33,7 +33,7 @@
   </appender>
 
   <appender name="ENCOUNTERDELETEFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <file>../webapps/wildbook/logs/encounter-delete.htm</file>
+    <file>/var/lib/tomcat7/webapps/wildbook/logs/encounter-delete.htm</file>
       <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
         <fileNamePattern>../webapps/wildbook/logs/%d{yyyy-MM-}encounter-delete.htm</fileNamePattern>
       </rollingPolicy>
@@ -46,7 +46,7 @@
   </appender>
 
   <appender name="USERFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <file>../webapps/wildbook/logs/user-access.htm</file>
+    <file>/var/lib/tomcat7/webapps/wildbook/logs/user-access.htm</file>
       <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
         <fileNamePattern>../webapps/wildbook/logs/%d{yyyy-MM-}user-access.htm</fileNamePattern>
       </rollingPolicy>
